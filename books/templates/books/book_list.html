@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BoiledEggs</title>
+	</head>
+	<body>
+		<h1>Boiled Eggs</h1>
+		{% for book in books %}
+			<h2><a href = "#">{{ book.title }}</a></h2>
+			<p> {{ book.summary }} </p>
+			{{ book.price }}
+			{{ book.ISBN }}
+			{{ book.publication }}
+		{% endfor %}
+	</body>
+</html>
