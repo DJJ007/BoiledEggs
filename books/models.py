@@ -19,10 +19,8 @@ class Book(models.Model):
 	def __str__(self):
 		return self.title
 
-class Author(models.Model):
+class Author(models.Model): #Use Later
 	name = models.CharField("Name of Author", max_length = 100)
-	book = models.ManyToManyField(Book)
-	publication = models.ManyToManyField(Publication)
 
 	def __str__(self):
 		return self.name
